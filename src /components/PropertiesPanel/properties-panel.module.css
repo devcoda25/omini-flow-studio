@@ -1,0 +1,117 @@
+.root {
+  display: grid;
+  width: 100%;
+  max-width: 720px;
+  min-height: 0;
+  grid-template-rows: auto 1fr auto;
+  gap: 16px;
+  /* Set a max height relative to viewport and allow the root to be shorter */
+  max-height: 85vh; 
+}
+
+.body {
+  display: grid;
+  overflow-y: auto;
+  min-height: 0; /* Important for flex/grid children inside a flex/grid container */
+  padding-right: 4px; /* for scrollbar */
+}
+
+.tabContent {
+  padding-top: 16px;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+.tabBody {
+    display: grid;
+    gap: 16px;
+    padding: 16px 4px;
+}
+
+.field {
+    display: grid;
+    gap: 6px;
+}
+
+.label {
+    font-size: 12px;
+    font-weight: 500;
+    color: hsl(var(--text-muted));
+}
+
+.warn, .err {
+    font-size: 12px;
+    color: hsl(var(--danger));
+}
+
+.infoRow {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 8px;
+    background-color: hsl(var(--muted));
+    border-radius: 8px;
+    border: 1px solid hsl(var(--border));
+}
+
+.badge {
+  padding: 2px 8px; border-radius: 999px;
+  background: hsl(var(--bg-elevated)); border: 1px solid hsl(var(--border));
+  color: hsl(var(--text-muted)); font-size: 12px;
+}
+.muted { color: hsl(var(--text-muted)); font-size: 12px; }
+
+.rowHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subhead {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.addBtn {
+    height: 28px;
+    padding: 0 10px;
+}
+
+.list {
+    display: grid;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.listItem {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 8px;
+    align-items: center;
+}
+
+.removeBtn {
+    width: 28px;
+    height: 28px;
+    display: grid;
+    place-items: center;
+}
+
+.footer {
+  border-top: 1px solid hsl(var(--border));
+  padding-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0; /* Prevent footer from shrinking */
+}
+.ok { color: hsl(var(--success)); font-size: 12px; }
+.problems { list-style: none; padding: 0; margin: 0; display: grid; gap: 4px; }
+.problemItem { color: hsl(var(--destructive)); font-size: 12px; }
+
+.hr {
+    border-color: hsl(var(--border));
+}

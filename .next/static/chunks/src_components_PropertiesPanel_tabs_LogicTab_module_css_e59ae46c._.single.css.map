@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/PropertiesPanel/tabs/LogicTab.module.css"],"sourcesContent":[".conditionGroup {\n    background-color: hsl(var(--muted) / 0.5);\n}\n\n.conditionRow {\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr auto;\n    align-items: center;\n    gap: 8px;\n}\n\n.orDivider {\n    text-align: center;\n    font-weight: 600;\n    font-size: 12px;\n    color: hsl(var(--muted-foreground));\n    position: relative;\n    margin: 16px 0;\n}\n.orDivider::before, .orDivider::after {\n    content: '';\n    position: absolute;\n    top: 50%;\n    width: calc(50% - 30px);\n    height: 1px;\n    background-color: hsl(var(--border));\n}\n.orDivider::before {\n    left: 0;\n}\n.orDivider::after {\n    right: 0;\n}\n"],"names":[],"mappings":"AAAA;;;;AAIA;;;;;;;AAOA;;;;;;;;;AAQA;;;;;;;;;AAQA;;;;AAGA"}}]
+}

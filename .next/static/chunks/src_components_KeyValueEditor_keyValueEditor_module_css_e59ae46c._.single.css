@@ -1,0 +1,25 @@
+/* [project]/src/components/KeyValueEditor/keyValueEditor.module.css [app-client] (css) */
+.keyValueEditor-module__bmetya__root {
+  gap: 6px;
+  display: grid;
+}
+
+.keyValueEditor-module__bmetya__label {
+  color: hsl(var(--muted-foreground));
+  margin-bottom: 4px;
+  font-size: 12px;
+}
+
+.keyValueEditor-module__bmetya__rows {
+  gap: 6px;
+  display: grid;
+}
+
+.keyValueEditor-module__bmetya__row {
+  grid-template-columns: 1fr 1fr auto;
+  align-items: center;
+  gap: 6px;
+  display: grid;
+}
+
+/*# sourceMappingURL=src_components_KeyValueEditor_keyValueEditor_module_css_e59ae46c._.single.css.map*/

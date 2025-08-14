@@ -1,0 +1,72 @@
+/* [project]/src/components/Presence/presence.module.css [app-client] (css) */
+.presence-module__49ZQPq__cursor {
+  z-index: 100;
+  pointer-events: none;
+  transition: transform .1s linear;
+  position: absolute;
+  transform: translate(-1px, -1px);
+}
+
+.presence-module__49ZQPq__dot {
+  border-radius: 999px;
+  width: 8px;
+  height: 8px;
+  box-shadow: 0 0 0 2px #fff, 0 0 4px 2px rgba(0, 0, 0, .3);
+}
+
+.presence-module__49ZQPq__tag {
+  white-space: nowrap;
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  position: absolute;
+  top: -2px;
+  left: 12px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, .15);
+}
+
+.presence-module__49ZQPq__stack {
+  padding-left: 8px;
+  display: flex;
+  position: absolute;
+  top: -12px;
+  right: -12px;
+}
+
+.presence-module__49ZQPq__av {
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 999px;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  margin-left: -8px;
+  font-size: 10px;
+  font-weight: 800;
+  display: grid;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+}
+
+.presence-module__49ZQPq__more {
+  background: #374151;
+}
+
+.presence-module__49ZQPq__banner {
+  z-index: 1000;
+  background: hsl(var(--bg-panel));
+  color: hsl(var(--text));
+  border-bottom: 1px solid hsl(var(--border-muted));
+  text-align: center;
+  padding: 6px 8px;
+  font-size: 14px;
+  font-weight: 600;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/*# sourceMappingURL=src_components_Presence_presence_module_css_e59ae46c._.single.css.map*/

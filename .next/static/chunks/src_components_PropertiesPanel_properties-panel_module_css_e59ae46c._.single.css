@@ -1,0 +1,141 @@
+/* [project]/src/components/PropertiesPanel/properties-panel.module.css [app-client] (css) */
+.properties-panel-module__zCiPDq__root {
+  grid-template-rows: auto 1fr auto;
+  gap: 16px;
+  width: 100%;
+  max-width: 720px;
+  min-height: 0;
+  max-height: 85vh;
+  display: grid;
+}
+
+.properties-panel-module__zCiPDq__body {
+  min-height: 0;
+  padding-right: 4px;
+  display: grid;
+  overflow-y: auto;
+}
+
+.properties-panel-module__zCiPDq__tabContent {
+  min-height: 0;
+  padding-top: 16px;
+  overflow-y: auto;
+}
+
+.properties-panel-module__zCiPDq__tabBody {
+  gap: 16px;
+  padding: 16px 4px;
+  display: grid;
+}
+
+.properties-panel-module__zCiPDq__field {
+  gap: 6px;
+  display: grid;
+}
+
+.properties-panel-module__zCiPDq__label {
+  color: hsl(var(--text-muted));
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.properties-panel-module__zCiPDq__warn, .properties-panel-module__zCiPDq__err {
+  color: hsl(var(--danger));
+  font-size: 12px;
+}
+
+.properties-panel-module__zCiPDq__infoRow {
+  background-color: hsl(var(--muted));
+  border: 1px solid hsl(var(--border));
+  border-radius: 8px;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  display: flex;
+}
+
+.properties-panel-module__zCiPDq__badge {
+  background: hsl(var(--bg-elevated));
+  border: 1px solid hsl(var(--border));
+  color: hsl(var(--text-muted));
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-size: 12px;
+}
+
+.properties-panel-module__zCiPDq__muted {
+  color: hsl(var(--text-muted));
+  font-size: 12px;
+}
+
+.properties-panel-module__zCiPDq__rowHeader {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.properties-panel-module__zCiPDq__subhead {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.properties-panel-module__zCiPDq__addBtn {
+  height: 28px;
+  padding: 0 10px;
+}
+
+.properties-panel-module__zCiPDq__list {
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+}
+
+.properties-panel-module__zCiPDq__listItem {
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 8px;
+  display: grid;
+}
+
+.properties-panel-module__zCiPDq__removeBtn {
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  display: grid;
+}
+
+.properties-panel-module__zCiPDq__footer {
+  border-top: 1px solid hsl(var(--border));
+  flex-shrink: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+  display: flex;
+}
+
+.properties-panel-module__zCiPDq__ok {
+  color: hsl(var(--success));
+  font-size: 12px;
+}
+
+.properties-panel-module__zCiPDq__problems {
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+}
+
+.properties-panel-module__zCiPDq__problemItem {
+  color: hsl(var(--destructive));
+  font-size: 12px;
+}
+
+.properties-panel-module__zCiPDq__hr {
+  border-color: hsl(var(--border));
+}
+
+/*# sourceMappingURL=src_components_PropertiesPanel_properties-panel_module_css_e59ae46c._.single.css.map*/

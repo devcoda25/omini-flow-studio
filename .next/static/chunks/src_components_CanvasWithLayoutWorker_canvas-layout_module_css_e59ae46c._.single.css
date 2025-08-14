@@ -1,0 +1,353 @@
+/* [project]/src/components/CanvasWithLayoutWorker/canvas-layout.module.css [app-client] (css) */
+.canvas-layout-module__QWzRrW__root {
+  height: 100%;
+  position: relative;
+}
+
+.canvas-layout-module__QWzRrW__canvas {
+  height: 100%;
+}
+
+.canvas-layout-module__QWzRrW__toolbar {
+  z-index: 40;
+  flex-wrap: wrap;
+  gap: 6px;
+  display: flex;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+.canvas-layout-module__QWzRrW__btn {
+  cursor: pointer;
+  border: 1px solid hsl(var(--border));
+  background: hsl(var(--bg-elevated));
+  height: 32px;
+  color: hsl(var(--text));
+  border-radius: 8px;
+  padding: 0 10px;
+}
+
+.canvas-layout-module__QWzRrW__badge {
+  z-index: 40;
+  background: hsl(var(--bg-panel));
+  border: 1px solid hsl(var(--border));
+  color: hsl(var(--text-muted));
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-size: 12px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.canvas-layout-module__QWzRrW__spinner {
+  z-index: 30;
+  background: hsla(var(--background), .5);
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+  color: hsl(var(--text));
+  place-items: center;
+  font-size: 13px;
+  display: grid;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.canvas-layout-module__QWzRrW__panel {
+  flex-wrap: wrap;
+  gap: 4px;
+  display: flex;
+}
+
+.canvas-layout-module__QWzRrW__panelBtn {
+  background: hsl(var(--card));
+  color: hsl(var(--card-foreground));
+  border: 1px solid hsl(var(--border));
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+.canvas-layout-module__QWzRrW__panelBtn:hover {
+  background: hsl(var(--accent));
+}
+
+.canvas-layout-module__QWzRrW__panelBtn:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+  background: hsl(var(--card));
+}
+
+.canvas-layout-module__QWzRrW__baseNode, .canvas-layout-module__QWzRrW__subflow, .canvas-layout-module__QWzRrW__groupBox {
+  background: hsl(var(--card));
+  border: 1px solid hsl(var(--border));
+  color: hsl(var(--card-foreground));
+  box-shadow: 0 4px 16px hsla(var(--foreground), .07);
+  border-radius: 12px;
+  min-width: 320px;
+}
+
+.canvas-layout-module__QWzRrW__baseNode[aria-selected="true"], .canvas-layout-module__QWzRrW__subflow[aria-selected="true"], .canvas-layout-module__QWzRrW__groupBox[aria-selected="true"] {
+  border-color: hsl(var(--ring));
+  box-shadow: 0 0 0 2px hsl(var(--ring) / .3), 0 4px 16px hsla(var(--foreground), .07);
+}
+
+.canvas-layout-module__QWzRrW__nodeHeader {
+  border-bottom: 1px solid hsl(var(--border));
+  background: var(--node-color, hsl(--primary));
+  color: #fff;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  display: flex;
+}
+
+.canvas-layout-module__QWzRrW__headerLeft {
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  display: flex;
+}
+
+.canvas-layout-module__QWzRrW__nodeIconWrapper {
+  background: rgba(255, 255, 255, .2);
+  border-radius: 8px;
+  flex-shrink: 0;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  display: grid;
+}
+
+.canvas-layout-module__QWzRrW__nodeIcon {
+  font-size: 18px;
+}
+
+.canvas-layout-module__QWzRrW__nodeTitle {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 15px;
+  font-weight: 600;
+  overflow: hidden;
+}
+
+.canvas-layout-module__QWzRrW__nodeMore {
+  color: #fff;
+  opacity: .7;
+  cursor: pointer;
+  background: none;
+  border: none;
+  border-radius: 4px;
+  margin-left: auto;
+  padding: 4px;
+}
+
+.canvas-layout-module__QWzRrW__nodeMore:hover {
+  opacity: 1;
+  background: rgba(255, 255, 255, .15);
+}
+
+.canvas-layout-module__QWzRrW__nodeBody {
+  color: hsl(var(--muted-foreground));
+  padding: 12px 14px;
+  font-size: 14px;
+}
+
+.canvas-layout-module__QWzRrW__nodeBody p {
+  margin: 0;
+}
+
+.canvas-layout-module__QWzRrW__handle {
+  background: hsl(var(--accent));
+  border: 2px solid hsl(var(--primary));
+  width: 10px;
+  height: 10px;
+  box-shadow: 0 0 0 1px hsl(var(--border));
+  border-radius: 999px;
+}
+
+.canvas-layout-module__QWzRrW__handleLabel {
+  color: hsl(var(--muted-foreground));
+  pointer-events: none;
+  font-size: 11px;
+  position: absolute;
+  right: 18px;
+  transform: translateY(-50%);
+}
+
+.canvas-layout-module__QWzRrW__groupBox {
+  background: hsl(var(--muted));
+  padding: 6px;
+}
+
+.canvas-layout-module__QWzRrW__groupHeader {
+  color: hsl(var(--muted-foreground));
+  padding: 6px 8px;
+  font-weight: 600;
+}
+
+.canvas-layout-module__QWzRrW__groupBody {
+  color: hsl(var(--muted-foreground));
+  padding: 8px;
+  font-size: 12px;
+}
+
+.canvas-layout-module__QWzRrW__controls {
+  border-radius: var(--radius);
+  border-width: 1px;
+  border-color: hsl(var(--border));
+  background-color: hsl(var(--card));
+  --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -4px rgba(0, 0, 0, .1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-ring-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-shadow);
+  display: flex;
+}
+
+.canvas-layout-module__QWzRrW__controls button {
+  border-right-width: 1px;
+  border-color: hsl(var(--border));
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+}
+
+.canvas-layout-module__QWzRrW__controls button:last-child {
+  border-right-width: 0;
+}
+
+.canvas-layout-module__QWzRrW__controls button:hover {
+  background-color: hsl(var(--accent));
+}
+
+.canvas-layout-module__QWzRrW__controls button svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.canvas-layout-module__QWzRrW__messageNodeBody {
+  flex-direction: column;
+  gap: 12px;
+  display: flex;
+}
+
+.canvas-layout-module__QWzRrW__messageContent {
+  background: hsl(var(--muted));
+  border-radius: 8px;
+  padding: 12px;
+  position: relative;
+}
+
+.canvas-layout-module__QWzRrW__messageTextarea {
+  resize: none;
+  width: 100%;
+  color: hsl(var(--foreground));
+  background: none;
+  border: none;
+  font-size: 14px;
+}
+
+.canvas-layout-module__QWzRrW__messageTextarea:focus {
+  outline: none;
+}
+
+.canvas-layout-module__QWzRrW__deleteButton {
+  background: hsl(var(--background));
+  border: 1px solid hsl(var(--border));
+  color: hsl(var(--muted-foreground));
+  cursor: pointer;
+  border-radius: 999px;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  display: grid;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.canvas-layout-module__QWzRrW__deleteButton:hover {
+  background: hsl(var(--destructive) / .1);
+  color: hsl(var(--destructive));
+}
+
+.canvas-layout-module__QWzRrW__messageButtons {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  display: grid;
+}
+
+.canvas-layout-module__QWzRrW__messageButtons > button:nth-child(n+4) {
+  grid-column: span 1;
+}
+
+.canvas-layout-module__QWzRrW__messageButtons > button {
+  color: #28af60;
+  background-color: rgba(46, 204, 112, .1);
+  border-color: rgba(46, 204, 112, .2);
+  font-weight: 500;
+}
+
+.canvas-layout-module__QWzRrW__messageButtons > button:hover {
+  background-color: rgba(46, 204, 112, .2);
+}
+
+.canvas-layout-module__QWzRrW__conditionBody {
+  flex-direction: column;
+  gap: 8px;
+  display: flex;
+}
+
+.canvas-layout-module__QWzRrW__conditionGroup {
+  background-color: hsl(var(--muted));
+  border: 1px solid hsl(var(--border));
+  border-radius: 6px;
+  flex-direction: column;
+  gap: 4px;
+  padding: 6px;
+  display: flex;
+}
+
+.canvas-layout-module__QWzRrW__orDivider {
+  text-align: center;
+  color: hsl(var(--muted-foreground));
+  font-size: 11px;
+  font-weight: 600;
+  position: relative;
+}
+
+.canvas-layout-module__QWzRrW__orDivider:before {
+  content: "";
+  background-color: hsl(var(--border));
+  width: 1px;
+  position: absolute;
+  top: -8px;
+  bottom: -8px;
+  left: 50%;
+}
+
+.canvas-layout-module__QWzRrW__branchRow {
+  background-color: hsl(var(--background));
+  border-radius: 6px;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  display: grid;
+}
+
+.canvas-layout-module__QWzRrW__branchCondition {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-family: Courier New, Courier, monospace;
+  font-size: 12px;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=src_components_CanvasWithLayoutWorker_canvas-layout_module_css_e59ae46c._.single.css.map*/

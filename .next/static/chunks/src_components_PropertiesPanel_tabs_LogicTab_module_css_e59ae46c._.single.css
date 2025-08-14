@@ -1,0 +1,39 @@
+/* [project]/src/components/PropertiesPanel/tabs/LogicTab.module.css [app-client] (css) */
+.LogicTab-module__ZE87da__conditionGroup {
+  background-color: hsl(var(--muted) / .5);
+}
+
+.LogicTab-module__ZE87da__conditionRow {
+  grid-template-columns: 1fr 1fr 1fr auto;
+  align-items: center;
+  gap: 8px;
+  display: grid;
+}
+
+.LogicTab-module__ZE87da__orDivider {
+  text-align: center;
+  color: hsl(var(--muted-foreground));
+  margin: 16px 0;
+  font-size: 12px;
+  font-weight: 600;
+  position: relative;
+}
+
+.LogicTab-module__ZE87da__orDivider:before, .LogicTab-module__ZE87da__orDivider:after {
+  content: "";
+  background-color: hsl(var(--border));
+  width: calc(50% - 30px);
+  height: 1px;
+  position: absolute;
+  top: 50%;
+}
+
+.LogicTab-module__ZE87da__orDivider:before {
+  left: 0;
+}
+
+.LogicTab-module__ZE87da__orDivider:after {
+  right: 0;
+}
+
+/*# sourceMappingURL=src_components_PropertiesPanel_tabs_LogicTab_module_css_e59ae46c._.single.css.map*/

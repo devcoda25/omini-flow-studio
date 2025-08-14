@@ -1,0 +1,31 @@
+/* [project]/src/components/VariableChipAutocomplete/variableChip.module.css [app-client] (css) */
+.variableChip-module___jnedW__root {
+  gap: 6px;
+  display: grid;
+}
+
+.variableChip-module___jnedW__label {
+  color: hsl(var(--muted-foreground));
+  font-size: 12px;
+}
+
+.variableChip-module___jnedW__chips {
+  flex-wrap: wrap;
+  gap: 6px;
+  display: flex;
+}
+
+.variableChip-module___jnedW__chip {
+  height: auto;
+  padding: 4px 10px;
+  font-size: 12px;
+}
+
+.variableChip-module___jnedW__muted {
+  color: hsl(var(--muted-foreground));
+  align-self: center;
+  padding: 8px;
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=src_components_VariableChipAutocomplete_variableChip_module_css_e59ae46c._.single.css.map*/

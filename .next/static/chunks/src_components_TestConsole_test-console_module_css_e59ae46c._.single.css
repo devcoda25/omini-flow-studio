@@ -1,0 +1,337 @@
+/* [project]/src/components/TestConsole/test-console.module.css [app-client] (css) */
+.test-console-module__CHttTW__root {
+  background: hsl(var(--card));
+  width: 480px;
+  height: calc(100% - 56px);
+  color: hsl(var(--card-foreground));
+  border-left: 1px solid hsl(var(--border));
+  z-index: 100;
+  grid-template-rows: auto auto 1fr;
+  gap: 8px;
+  display: grid;
+  position: fixed;
+  top: 56px;
+  right: 0;
+  box-shadow: -10px 0 24px rgba(0, 0, 0, .1);
+}
+
+.test-console-module__CHttTW__resizer {
+  cursor: ew-resize;
+  background: none;
+  width: 6px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -6px;
+}
+
+.test-console-module__CHttTW__header {
+  border-bottom: 1px solid hsl(var(--border));
+  background: hsl(var(--muted));
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px;
+  display: flex;
+}
+
+.test-console-module__CHttTW__title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.test-console-module__CHttTW__headerRight {
+  align-items: center;
+  gap: 10px;
+  display: inline-flex;
+}
+
+.test-console-module__CHttTW__inline {
+  align-items: center;
+  gap: 6px;
+  display: inline-flex;
+}
+
+.test-console-module__CHttTW__closeBtn {
+  border: 1px solid hsl(var(--border));
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  cursor: pointer;
+  border-radius: 8px;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  display: grid;
+}
+
+.test-console-module__CHttTW__toolbar {
+  border-bottom: 1px solid hsl(var(--border));
+  background: hsl(var(--card));
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  display: flex;
+}
+
+.test-console-module__CHttTW__group {
+  align-items: center;
+  gap: 6px;
+  display: inline-flex;
+}
+
+.test-console-module__CHttTW__label {
+  color: hsl(var(--muted-foreground));
+  font-size: 12px;
+}
+
+.test-console-module__CHttTW__select, .test-console-module__CHttTW__input, .test-console-module__CHttTW__btn {
+  border: 1px solid hsl(var(--input));
+  background: hsl(var(--background));
+  height: 30px;
+  color: hsl(var(--foreground));
+  border-radius: 8px;
+  padding: 0 10px;
+}
+
+.test-console-module__CHttTW__btn {
+  cursor: pointer;
+}
+
+.test-console-module__CHttTW__badge {
+  border: 1px solid hsl(var(--border));
+  color: hsl(var(--muted-foreground));
+  background: hsl(var(--muted));
+  border-radius: 999px;
+  margin-left: auto;
+  padding: 2px 10px;
+  font-size: 12px;
+}
+
+.test-console-module__CHttTW__badgeGreen {
+  color: hsl(var(--foreground));
+  background: rgba(46, 204, 112, .1);
+  border-color: rgba(46, 204, 112, .2);
+}
+
+.test-console-module__CHttTW__badgeOrange {
+  color: hsl(var(--foreground));
+  background: rgba(255, 166, 0, .1);
+  border-color: rgba(255, 166, 0, .2);
+}
+
+.test-console-module__CHttTW__body {
+  grid-template-rows: 1fr auto minmax(150px, 220px);
+  gap: 8px;
+  padding: 0 8px 8px;
+  display: grid;
+  overflow: hidden;
+}
+
+.test-console-module__CHttTW__contextPanel {
+  border: 1px solid hsl(var(--border));
+  background: hsl(var(--muted));
+  border-radius: 12px;
+  padding: 8px;
+}
+
+.test-console-module__CHttTW__tracePanel {
+  border: 1px solid hsl(var(--border));
+  background: hsl(var(--card));
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.test-console-module__CHttTW__chatRoot {
+  border: 1px solid hsl(var(--border));
+  background: hsl(var(--background));
+  border-radius: 12px;
+  grid-template-rows: 1fr auto;
+  display: grid;
+  overflow: hidden;
+}
+
+.test-console-module__CHttTW__chatScroll {
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px;
+  display: flex;
+  overflow: auto;
+}
+
+.test-console-module__CHttTW__bubble {
+  word-break: break-word;
+  border-radius: 18px;
+  max-width: 82%;
+  padding: 8px 12px;
+  line-height: 1.4;
+}
+
+.test-console-module__CHttTW__user {
+  background: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+  border-bottom-right-radius: 4px;
+  align-self: flex-end;
+}
+
+.test-console-module__CHttTW__bot {
+  background: hsl(var(--muted));
+  color: hsl(var(--muted-foreground));
+  border-bottom-left-radius: 4px;
+  align-self: flex-start;
+}
+
+.test-console-module__CHttTW__system {
+  color: hsl(var(--muted-foreground));
+  background: none;
+  align-self: center;
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+.test-console-module__CHttTW__bubbleText {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.test-console-module__CHttTW__actionRow, .test-console-module__CHttTW__attRow, .test-console-module__CHttTW__qrRow {
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+  display: flex;
+}
+
+.test-console-module__CHttTW__qrRow {
+  padding: 8px 10px;
+}
+
+.test-console-module__CHttTW__qrChip, .test-console-module__CHttTW__ctaChip, .test-console-module__CHttTW__attChip, .test-console-module__CHttTW__qrBtn {
+  border: 1px solid hsl(var(--border));
+  cursor: pointer;
+  border-radius: 999px;
+  padding: 4px 12px;
+  font-size: 13px;
+}
+
+.test-console-module__CHttTW__qrChip, .test-console-module__CHttTW__qrBtn {
+  background: hsl(var(--accent) / .1);
+  color: hsl(var(--accent));
+  border-color: hsl(var(--accent) / .3);
+}
+
+.test-console-module__CHttTW__ctaChip {
+  background: hsl(var(--success) / .1);
+  color: hsl(var(--success));
+  border-color: hsl(var(--success) / .3);
+}
+
+.test-console-module__CHttTW__attChip {
+  background: hsl(var(--muted));
+  color: hsl(var(--muted-foreground));
+}
+
+.test-console-module__CHttTW__inputRow {
+  border-top: 1px solid hsl(var(--border));
+  grid-template-columns: 1fr auto;
+  gap: 6px;
+  padding: 8px;
+  display: grid;
+}
+
+.test-console-module__CHttTW__sendBtn {
+  border: 1px solid hsl(var(--border));
+  background: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 0 12px;
+}
+
+.test-console-module__CHttTW__theme_whatsapp .test-console-module__CHttTW__bot {
+  background: #e9fbe9;
+}
+
+.test-console-module__CHttTW__theme_sms .test-console-module__CHttTW__bot {
+  background: #e9f2fb;
+}
+
+.test-console-module__CHttTW__voiceRoot {
+  gap: 8px;
+  padding: 8px;
+  display: grid;
+}
+
+.test-console-module__CHttTW__voiceControls {
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+  display: grid;
+}
+
+.test-console-module__CHttTW__warn {
+  color: hsl(var(--destructive));
+  font-size: 12px;
+}
+
+.test-console-module__CHttTW__traceRoot {
+  grid-template-rows: auto 1fr;
+  height: 100%;
+  display: grid;
+}
+
+.test-console-module__CHttTW__traceToolbar {
+  border-bottom: 1px solid hsl(var(--border));
+  align-items: center;
+  gap: 6px;
+  padding: 6px;
+  display: flex;
+}
+
+.test-console-module__CHttTW__traceScroll {
+  padding: 6px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px;
+  overflow: auto;
+}
+
+.test-console-module__CHttTW__traceLine {
+  gap: 8px;
+  display: flex;
+}
+
+.test-console-module__CHttTW__traceError {
+  color: hsl(var(--destructive));
+}
+
+.test-console-module__CHttTW__traceTs, .test-console-module__CHttTW__traceNode {
+  color: hsl(var(--muted-foreground));
+}
+
+.test-console-module__CHttTW__traceType {
+  font-weight: 600;
+}
+
+.test-console-module__CHttTW__ctxRoot {
+  gap: 8px;
+  padding: 8px;
+  display: grid;
+}
+
+.test-console-module__CHttTW__ctxText {
+  background: hsl(var(--background));
+  width: 100%;
+  min-height: 120px;
+  color: hsl(var(--foreground));
+  border: 1px solid hsl(var(--border));
+  border-radius: 8px;
+  padding: 8px;
+  font-family: ui-monospace, monospace;
+  font-size: 12px;
+}
+
+.test-console-module__CHttTW__ctxActions {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+/*# sourceMappingURL=src_components_TestConsole_test-console_module_css_e59ae46c._.single.css.map*/

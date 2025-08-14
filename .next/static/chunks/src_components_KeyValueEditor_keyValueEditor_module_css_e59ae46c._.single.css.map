@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/KeyValueEditor/keyValueEditor.module.css"],"sourcesContent":[".root { display: grid; gap: 6px; }\n.label { font-size: 12px; color: hsl(var(--muted-foreground)); margin-bottom: 4px; }\n.rows { display: grid; gap: 6px; }\n.row { display: grid; grid-template-columns: 1fr 1fr auto; gap: 6px; align-items: center; }\n"],"names":[],"mappings":"AAAA;;;;;AACA;;;;;;AACA;;;;;AACA"}}]
+}
